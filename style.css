@@ -18,3 +18,68 @@ body {
 .con-borde{
     border:2px solid red !important;
 }
+
+
+/* parte 2 del desafio */
+
+.container{
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0 0 0 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.stickers-grid{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.sticker-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sticker-item img{
+    width: 100px;
+    height: 100px;
+    object-fit:cover ;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.sticker-item input[type="number"]{
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border:1px solid #ccc;
+    border-radius: 4px;
+}
+
+#verificationbtn{
+    background-color: #007bff;
+    color: white;
+    border:none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+#verificarbtn:hover{
+    background-color: #0056b3;
+}
+
+.resultado{
+    margin: top 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color:#333;
+}
