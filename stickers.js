@@ -1,17 +1,17 @@
 //parte 2 del desafio//
 
-const inputSticker1 = document.getElementById('Sticker1');
-const inputSticker2 = document.getElementById('Sticker2');
-const inputSticker3 = document.getElementById('Sticker3');
+const inputSticker1 = document.getElementById('sticker1');
+const inputSticker2 = document.getElementById('sticker2');
+const inputSticker3 = document.getElementById('sticker3');
 const verificarBtn = document.getElementById('verificarBtn');
 const resultadoParrafo = document.getElementById('resultado');
 
-
-verificarBtn.addEventListener('click', function() {
+verificarBtn.addEventListener("click", function() {
     
-    const cantidad1 = Number(inputSticker1.value) || 0;
-    const cantidad2 = Number(inputSticker2.value) || 0;
-    const cantidad3 = Number(inputSticker3.value) || 0;
+     const cantidad1 = Math.max(Math.floor(Number(inputSticker1.value) || 0 ), 0);
+     const cantidad2 = Math.max(Math.floor(Number(inputSticker2.value) || 0), 0);
+     const cantidad3 = Math.max(Math.floor(Number(inputSticker3.value) || 0), 0);
+
 
     const totalStickers = cantidad1 + cantidad2 + cantidad3;
 
