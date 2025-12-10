@@ -83,3 +83,55 @@ body {
     font-weight: bold;
     color:#333;
 }
+
+/*parte 3 del desafio */
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.password-input {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.digito-select {
+    padding: 10px 15px;
+    font-size: 1.2em;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#ingresarBtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+#ingresarBtn:hover {
+    background-color: #0056b3;
+}
+
+.resultado {
+    margin-top: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    min-height: 20px; 
+}
